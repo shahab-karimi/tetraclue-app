@@ -19,7 +19,21 @@
   <p>Puzzle Trove brings several logic puzzle games together in one app: TOILS (fill every white square with tetrominoes), Color Mosaic (color the mosaic so touching tiles never match) and Nodebound (start on green, visit every node exactly once, finish on yellow), with more on the way. Every puzzle has exactly one solution that you can reach by reasoning.</p>
 
   <h2>Support</h2>
-  <p>Questions, problems or ideas? <a href="https://github.com/shahab-karimi/tetraclue-app/issues/new">Open a support request</a> (a free GitHub account is needed) and include the game, your device model (iPhone or iPad) and iOS version.</p>
+  <p>Questions, problems or ideas? Please include the game, your device model (iPhone or iPad) and iOS version.</p>
+  <p>
+    <a id="contact-btn" href="mailto:shahab.karimi1985@gmail.com?subject=Puzzle%20Trove%20Support" style="display:inline-block;padding:10px 18px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;">Contact Us</a>
+    &nbsp;or email <a href="mailto:shahab.karimi1985@gmail.com?subject=Puzzle%20Trove%20Support"><strong>shahab.karimi1985@gmail.com</strong></a>
+  </p>
+  <script>
+    document.getElementById('contact-btn').addEventListener('click', function (e) {
+      var ua = navigator.userAgent || '';
+      var isMobile = /iPhone|iPad|iPod|Android/i.test(ua);
+      if (!isMobile) {
+        e.preventDefault();
+        window.open('https://mail.google.com/mail/?view=cm&fs=1&to=shahab.karimi1985%40gmail.com&su=Puzzle%20Trove%20Support', '_blank', 'noopener');
+      }
+    });
+  </script>
 
   <h2>Frequently asked questions</h2>
 
